@@ -1,12 +1,12 @@
 ﻿static double GetAverage(int[] numbers)
 {
-    double sumio = 0.0;
+    double summary = 0.0; // Renamed the variable for clarity
     foreach (var number in numbers)
     {
-        sumio += number;
+        summary += number;
     }
 
-    return sumio / numbers.Length;
+    return summary / numbers.Length;
 }
 
 int[] numbers = { 1, 2, 3, 4 };
