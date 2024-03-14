@@ -1,6 +1,6 @@
 ﻿static double GetAverage(int[] numbers)
 {
-    double summary = 0.0; // Renamed the variable for clarity
+    double summary = 0.0;
     foreach (var number in numbers)
     {
         summary += number;
