@@ -1,17 +1,14 @@
-﻿static int GetMax(int[] numbers)
+﻿static double GetAverage(int[] numbers)
 {
-    int max = 0;
-    for (int i = 0; i < numbers.Length; i++)
+    double sumio = 0.0;
+    foreach (var number in numbers)
     {
-        if (numbers[i] > max)
-        {
-            max = numbers[i];
-        }
+        sumio += number;
     }
 
-    return max;
+    return sumio / numbers.Length;
 }
 
 int[] numbers = { 1, 2, 3, 4 };
-double average = GetMax(numbers);
+double average = GetAverage(numbers);
 Console.WriteLine(average);
